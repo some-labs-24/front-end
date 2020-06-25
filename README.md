@@ -3,17 +3,11 @@
 
 # Social Media Strategy
 
-You can find the deployed project at [Social Media Strategy](https://so-me.net/).
+You can find the deployed project at [Social Media Strategy](https://so-me.netlify.app/).
 
 ## Contributors
 
-### Labs 22
-
-|                                                             [Jason Long](https://github.com/jlong5795)                                                             |                                                             [Jess Wolff](https://github.com/jleahwolff)                                                             |                                                            [Jose Rivera](https://github.com/Jrive204)                                                             |                                                           [Matthew Bedard](https://github.com/Matt-GitHub)                                                           |                                                          [Tyler Gilchrist](https://github.com/Tyler668)                                                           |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [<img src="https://avatars3.githubusercontent.com/u/57104675?s=460&u=e7620554469deb924ac378097155cd45590cbdf9&v=4" width = "200" />](https://github.com/jlong5795) | [<img src="https://avatars1.githubusercontent.com/u/54365640?s=460&u=7b8b4d3f947e41d99d2e8bf9aa2782a71702d028&v=4" width = "200" />](https://github.com/jleahwolff) | [<img src="https://avatars3.githubusercontent.com/u/56930065?s=460&u=49e87593a294177fe8d2f4afeda8b915f24580d2&v=4" width = "200" />](https://github.com/Jrive204) | [<img src="https://avatars1.githubusercontent.com/u/35118316?s=460&u=0cde4614da30d79704b3cdadf2aed924199e85f9&v=4" width = "200" />](https://github.com/Matt-GitHub) | [<img src="https://avatars1.githubusercontent.com/u/52633530?s=460&u=097133dc28171488710ff03f6e5bfef9bdd7db2e&v=4" width = "200" />](https://github.com/Tyler668) |
-|                                       [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jlong5795)                                       |                                       [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jleahwolff)                                       |                                       [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Jrive204)                                       |                                       [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Matt-GitHub)                                       |                                       [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Tyler668)                                       |
-|                   [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jasonlong1231/)                   |                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jwolff2/)                       |                         [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](www.linkedin.com/in/jrive204)                          |                 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/matthew-bedard-dev/)                  |            [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/tyler-gilchrist-a5a426191/)             |
+SoMe was built in Lambda School Labs - you can find the ongoing original repo here: [Lambda School Repo](https://github.com/Lambda-School-Labs/social-media-strategy-fe)
 
 ### Labs 24
 
@@ -36,9 +30,7 @@ You can find the deployed project at [Social Media Strategy](https://so-me.net/)
 
 [Product Canvas](https://www.notion.so/Social-Media-Strategy-9d1840703db34c5cb44d0f4a0cc45543)
 
-[UX Design files](https://www.figma.com/file/ssdhBZL2Yr9GYaRyZtO8Cu/Social-Media-Strategy%2C-JP)
-
-[UX Design files v2](https://www.figma.com/file/xUEu5t398Z4vRXxHNs3jX9/Draft-5?node-id=0%3A1)
+[UX Design files v2.0](https://www.figma.com/file/xUEu5t398Z4vRXxHNs3jX9/Draft-5?node-id=0%3A1)
 
 Small business owners, social media managers and tech professionals aren't sure when and what content will optimize their engagement across various social media platforms
 
@@ -77,9 +69,9 @@ React-Beautiful-DnD
 
 - Controls and styles drag-and-drop functionality
 
-#### Front end deployed to `AWS Amplify`
+#### Front end deployed with `Netlify`
 
-#### [Back end](https://github.com/Lambda-School-Labs/social-media-strategy-be) built using:
+#### [Back end](https://github.com/some-labs-24/back-end) built using:
 
 - Node.js
 - Express.js
@@ -87,9 +79,9 @@ React-Beautiful-DnD
 
 # APIs
 
-## Authentication API here
+## Okta Authentication APIs
 
-Provided by our backend to handle account creation and social media network authorizations.
+Provided by Okta to handle account creation, user authentication and social media network authorizations.
 
 <!--## 2️⃣ Payment API here
 
@@ -135,7 +127,7 @@ In order for the app to function correctly, the user must set up their own envir
 
 # Testing
 
-🚫Document what you used for testing and why
+Unit Testing conducted with React Testing Library
 
 # Installation Instructions
 
