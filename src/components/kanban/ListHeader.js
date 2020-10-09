@@ -6,7 +6,7 @@ import { makeStyles, Typography } from "@material-ui/core";
 // Icons
 import TwitterIcon from "@material-ui/icons/Twitter";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   header: {
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(1),
@@ -15,25 +15,25 @@ const useStyles = makeStyles(theme => ({
     borderRadius: theme.shape.borderRadius,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   twitterHandleContainer: {
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
   },
   twitterIcon: {
     color: "#2196F3",
-    width: "16px"
+    width: "16px",
   },
   cursorGrab: {
-    cursor: "grab"
+    cursor: "grab",
   },
   cursorPointer: {
-    cursor: "pointer"
-  }
+    cursor: "pointer",
+  },
 }));
 
-const ListHeader = props => {
+const ListHeader = (props) => {
   const { list, dragHandleProps, user } = props;
 
   const {
@@ -41,7 +41,7 @@ const ListHeader = props => {
     twitterHandleContainer,
     twitterIcon,
     cursorGrab,
-    cursorPointer
+    cursorPointer,
   } = useStyles();
 
   const dispatch = useDispatch();
@@ -55,11 +55,11 @@ const ListHeader = props => {
     // eslint-disable-next-line
   }, [list]); // it does not work if listTitle is added to depencencies array
 
-  const handleInputText = e => {
+  const handleInputText = (e) => {
     setListTitle(e.currentTarget.value);
   };
 
-  const submit = e => {
+  const submit = (e) => {
     e.preventDefault();
 
     if (!listTitle && listTitle === "Drafts") {
@@ -91,7 +91,9 @@ const ListHeader = props => {
       )}
       <div className={twitterHandleContainer}>
         <TwitterIcon className={twitterIcon} />
-        <Typography variant="caption">{`@${user.twitter_handle}`}</Typography>
+        <Typography variant="caption">
+          {user.twitter_handle ? `@${user.twitter_handle}` : " Not Connected"}
+        </Typography>
       </div>
     </div>
   );
