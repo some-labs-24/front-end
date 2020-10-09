@@ -110,7 +110,7 @@ const Post = ({ post }) => {
   const handleClose = () => {
     setModalOpen(false);
 
-    if (!user.handle_twitter) {
+    if (!user.twitter_handle) {
       push("/connect/twitter");
     }
   };
@@ -177,7 +177,7 @@ const Post = ({ post }) => {
                 <>
                   {!post.posted && (
                     <SchedulePost
-                      twitter_hanlde={user.twitter_handle}
+                      twitter_handle={user.twitter_handle}
                       scheduledTime={post.scheduled_time}
                       postId={post.id}
                     />
