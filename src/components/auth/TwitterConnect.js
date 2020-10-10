@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useOktaAuth } from "@okta/okta-react/dist/OktaContext";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
+import { disconnectTwitter as disconnectTwitterAction } from "../../actions/userActions";
+import { useDispatch } from "react-redux";
 
 import twitterLogo from "../../assets/imgs/twitter-logo.svg";
 // Material-UI
@@ -44,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
 function TwitterConnect(props) {
   const classes = useStyles();
   const { authService } = useOktaAuth();
+  const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
   const [isConnected, setIsConnected] = useState(false);
 
@@ -70,6 +73,7 @@ function TwitterConnect(props) {
       .then(({ data }) => {
         setIsConnected(false);
         setLoading(false);
+        dispatch(disconnectTwitterAction());
       })
       .catch((err) => console.error(err));
   }

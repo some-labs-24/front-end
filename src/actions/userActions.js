@@ -1,6 +1,6 @@
-import { INITIALIZE_USER } from "./userActionTypes";
+import { INITIALIZE_USER, DISCONNECT_TWITTER } from "./userActionTypes";
 
-export const initializeUser = (authService, history) => async dispatch => {
+export const initializeUser = (authService, history) => async (dispatch) => {
   try {
     var user = await authService.getUser();
   } catch (err) {
@@ -17,7 +17,13 @@ export const initializeUser = (authService, history) => async dispatch => {
       initialized: true,
       okta_uid: sub,
       email,
-      twitter_handle
-    }
+      twitter_handle,
+    },
+  });
+};
+
+export const disconnectTwitter = () => (dispatch) => {
+  dispatch({
+    type: DISCONNECT_TWITTER,
   });
 };
